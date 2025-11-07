@@ -13,11 +13,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${headingFont.variable} ${bodyFont.variable} antialiased`}>
       <body
-        className="bg-[--color-bg-light] text-[--color-text-light] dark:bg-[--color-bg-dark] dark:text-[--color-text-dark] min-h-screen"
+        className="bg-[--color-bg-dark] text-[--color-text-light] min-h-screen"
       >
-        <div className="mx-auto max-w-3xl px-4">
+        <div className="max-w-2xl mx-auto mt-1">
           <Navbar />
-          <main className="py-8">{children}</main>
+          <main>{children}</main>
           <Footer />
         </div>
       </body>
