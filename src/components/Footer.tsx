@@ -30,17 +30,17 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="flex flex-col items-center justify-center py-6">
-      <ul className="flex space-x-8 mb-4">
+    <footer className="flex flex-col items-center justify-center">
+      <ul className="flex space-x-10 mb-6">
         {items.map(({ Icon, href, title }) => (
           <li key={title}>
             <Link
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded hover:text-emerald-500 transition-colors text-gray-300"
+              className="p-2 rounded transition-colors text-primary-light dark:text-primary-dark"
             >
-              <Icon size={28} />
+              <Icon className="text-2xl" />
             </Link>
           </li>
         ))}

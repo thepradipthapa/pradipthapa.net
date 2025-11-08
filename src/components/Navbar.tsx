@@ -2,6 +2,7 @@
 import Link from "next/link";
 import {usePathname} from 'next/navigation'
 import { siteMap } from "@/lib/config/site-config";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -30,17 +31,17 @@ export default function Navbar() {
   ]
   return (
     <nav className="flex items-center justify-between py-4 text-lg font-body mt-4">
-      <ul className="flex space-x-6 px-10 py-3 bg-dark opacity-75 rounded-full border">
+      <ul className="flex space-x-6">
         {items.map((item)=> (
           <li key={item.title}>
-            <Link href={item.href} className={`shadow ${pathname === item.href ? "text-gray-50" : "text-gray-400"}`} >
+            <Link href={item.href} className={` ${pathname === item.href ? "text-primary-light dark:text-primary-dark" : "text-secondary-light dark:text-secondary-dark"}`} >
             {item.title}
             </Link>
           </li>
         ))}
       </ul>
 
-      <button className="text-dark bg-stone-50 rounded-4xl px-3">Light</button>
+      <ThemeToggle/>
     </nav>
   )
 }

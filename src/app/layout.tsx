@@ -13,11 +13,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${headingFont.variable} ${bodyFont.variable} antialiased`}>
       <body
-        className="bg-[--color-bg-dark] text-[--color-text-light] min-h-screen"
+        className=" min-h-screen bg-background-light dark:bg-background-dark"
       >
-        <div className="max-w-2xl mx-auto mt-1">
+        <div className="max-w-3xl mx-auto px-2">
           <Navbar />
-          <main>{children}</main>
+          <main className="my-6">{children}</main>
           <Footer />
         </div>
       </body>

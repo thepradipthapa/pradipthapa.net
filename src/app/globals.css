@@ -1,19 +1,28 @@
+
 @import "tailwindcss";
 
-html, body {
-  background-color: var(--color-bg-dark);
-  color: var(--color-text-light);
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
+/* 🌈 1. Define design tokens directly under @theme (no :root!) */
 @theme {
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 
-  --color-bg-light: #ffffff;
-  --color-bg-dark: #1b1b1b;
+  /* fro Light Mode */
+  --color-background-light: #FAFAFA;       /* Page background */
+  --color-primary-light: #111827;          /* Main text / headings */
+  --color-secondary-light: #4B5563;        /* Subtext / secondary info */
+  --color-surface-light: #FFFFFF;          /* Cards, modals, navbars */
+  --color-border-light: #E5E7EB;           /* Borders, dividers */
+  --color-hover-surface-light: #F3F4F6;    /* Card/button hover */
+  --color-hover-text-light: #1F2937;       /* Text hover */
 
-  --color-text-light: #6b7280; /* gray-500 */
-  --color-text-dark: #f3f4f6; /* gray-100 */
-
+  /* for Dark Mode */
+  --color-background-dark: #0D1117;
+  --color-primary-dark: #E6EDF3;
+  --color-secondary-dark: #9CA3AF;
+  --color-surface-dark: #161B22;          /* Corrected typo from 'colort-surface-dark' */
+  --color-border-dark: #2D333B;
+  --color-hover-surface-dark: #1C222B;    /* Card/button hover */
+  --color-hover-text-dark: #FFFFFF;       /* Text hover */
 }
-

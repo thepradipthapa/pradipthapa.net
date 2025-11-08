@@ -6,5 +6,5 @@ export const siteMap = {
   bookCalender: '',
   mailTo: 'mailto:pradipthapa@example.com',
   contact: '/contact',
-  blog: '/blog',
+  blog: 'https://blog.pradipthapa.net',
 }
