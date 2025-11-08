@@ -30,7 +30,7 @@ export default function Navbar() {
   ]
   return (
     <nav className="flex items-center justify-between py-4 text-lg font-body mt-4">
-      <ul className="flex space-x-6">
+      <ul className="flex space-x-6 px-10 py-3 bg-dark opacity-75 rounded-full border">
         {items.map((item)=> (
           <li key={item.title}>
             <Link href={item.href} className={`shadow ${pathname === item.href ? "text-gray-50" : "text-gray-400"}`} >
