@@ -34,7 +34,7 @@ export default function Navbar() {
       <ul className="flex space-x-6">
         {items.map((item)=> (
           <li key={item.title}>
-            <Link href={item.href} className={` ${pathname === item.href ? "text-primary-light dark:text-primary-dark" : "text-secondary-light dark:text-secondary-dark"}`} >
+            <Link href={item.href} className={` ${pathname === item.href ? "text-primary-light dark:text-primary-dark" : "text-secondary-light dark:text-secondary-dark"} text-base`} >
             {item.title}
             </Link>
           </li>

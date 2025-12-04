@@ -40,7 +40,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="p-2 rounded transition-colors text-primary-light dark:text-primary-dark"
             >
-              <Icon className="text-2xl" />
+              <Icon className="text-xl" />
             </Link>
           </li>
         ))}

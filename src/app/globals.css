@@ -8,7 +8,7 @@
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 
-  /* fro Light Mode */
+  /* for Light Mode */
   --color-background-light: #FAFAFA;       /* Page background */
   --color-primary-light: #111827;          /* Main text / headings */
   --color-secondary-light: #4B5563;        /* Subtext / secondary info */
