@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import type { Metadata } from "next";
 
 type Project = {
   title: string;
@@ -62,11 +62,16 @@ export const projects: Project[] = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Explore Projects by Pradip Thapa.",
+};
 
 export default function ProjectsSection() {
   return (
     <>
-    <div>Project</div>
+    <div className="font-heading text-3xl text-primary-light dark:text-primary-dark ">Project</div>
     </>
   );
 }

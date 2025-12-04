@@ -1,8 +1,14 @@
-"use client";
-
 import Link from "next/link";
 import { CiMail } from "react-icons/ci";
 import { siteMap } from "@/lib/config/site-config";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with Pradip Thapa.",
+};
+
 
 export default function Contact() {
   return (

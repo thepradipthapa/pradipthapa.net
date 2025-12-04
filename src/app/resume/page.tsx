@@ -1,9 +1,13 @@
-
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Resume",
+  description:
+    "Explore the resume of Pradip Thapa – Backend Developer",
+};
 export default function Resume() {
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-heading">Resume</h1>
-      <p className="text-gray-600">This is the resume page.</p>
-    </div>
+    <>
+    <div className="font-heading text-3xl text-primary-light dark:text-primary-dark ">Resume</div>
+    </>
   );
 }
