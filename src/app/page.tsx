@@ -13,12 +13,7 @@ export default function Home() {
           Hey, I'm Pradip Thapa 👋
         </h1>
         <p className="text-secondary-light dark:text-secondary-dark">
-          I’m an aspiring Backend Developer focused on building reliable,
-          scalable, and maintainable systems. I mainly work with Python, Django,
-          Django REST Framework (DRF), and FastAPI to build systems. I enjoy
-          solving practical problems by breaking complex challenges into smaller,
-          manageable pieces and turning those solutions into production‑ready
-          systems.
+        Backend developer who practices backend first principles and writes thoughtful code. When I’m not building with Python, Django, or FastAPI, you’ll find me diving into the internals of backend systems, exploring other codebases or learning new skills to expand my horizons.
         </p>
       </div>
 
@@ -30,54 +25,36 @@ export default function Home() {
         </div>
       ))}
     </div>
-  );
+);
 }
 
 // Content
 export const chunks = [
   {
-    title: "Education & Expertise",
+    title: "Intro",
     content: (
       <div className="flex flex-col gap-2">
         <p className="">
-          I am pursuing a Bachelor of Computer Science at Banke Bageshwori
-          Campus, Nepalgunj, Nepal, combining theoretical knowledge with
-          practical backend development skills.
+          I’m a software engineer who cares deeply about writing thoughtful code. I like to build things from first principles. When I started learning backend development, I began by tracing the journey of a single HTTP request and understanding how data actually flows through a system.
         </p>
         <p className="">
-          My expertise includes API design, database management, full‑stack
-          development with Django, JWT‑based authentication for web security,
-          and containerizing applications with Docker. I follow production‑grade
-          practices to build reliable, scalable, and maintainable systems, and I
-          enjoy tackling complex problems by breaking them into manageable
-          components.
+          For me, backend development isn’t just about APIs. It’s about building systems that are reliable today, maintainable tomorrow, and scalable when needed. It’s about understanding the problem, designing simple and elegant solutions, and building something that makes a real impact.
         </p>
       </div>
     ),
   },
+
   {
-    title: "Learning & Mentorship",
+    title: "Education & Expertise",
     content: (
-      <p className="">
-        I’m continuously expanding my knowledge in backend development, system
-        design, clean code, and database, with a focus on building systems that
-        are reliable, scalable, and maintainable. I primarily follow official
-        documentation to learn and stay up to date, gaining a deep understanding
-        of the stack, and I also learn from my favorite YouTube educators. I
-        also enjoy sharing my learning and experiences with others, mentoring
-        beginners in backend development to help them understand concepts and
-        grow into confident backend developers.
-      </p>
-    ),
-  },
-  {
-    title: "Personal Interests",
-    content: (
-      <p className="">
-        Beyond work, I enjoy exploring topics in technology, reading about
-        personal development, watching movies and live games matches. I’m also
-        passionate about learning new skills to expand my horizons.
-      </p>
+      <div className="flex flex-col gap-2">
+        <p className="">
+          I’m currently pursuing a Bachelor of Computer Science at Banke Bageshwori Campus, Nepalgunj, Nepal. Alongside my studies, I spend most of my time building backend projects and exploring how real-world systems are designed.
+        </p>
+        <p className="">
+          Over time, I’ve gained hands-on experience with Python, Django, Django REST Framework, and FastAPI, designing REST APIs and backend architectures, working with databases like PostgreSQL and Redis, implementing authentication and authorization, and containerizing applications with Docker. I focus on building systems that are reliable, maintainable, and scalable, while constantly improving my understanding of backend development from first principles.
+        </p>
+      </div>
     ),
   },
   {
@@ -85,8 +62,8 @@ export const chunks = [
     content: (
       <div className="flex flex-col gap-3">
         <p className="">
-          I'm always open to discussing backend development and opportunities as
-          a backend developer.
+          I’m always happy to talk about backend development or potential opportunities. 
+          Feel free to reach out!
         </p>
         <Link
           href="https://github.com/thepradipthapa"
