@@ -49,17 +49,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${headingFont.variable} ${bodyFont.variable} antialiased`}>
-      <body
-        className=" min-h-screen bg-background-light dark:bg-background-dark"
-      >
-        <div className="max-w-3xl mx-auto px-2">
+      <body className="min-h-screen bg-background-light dark:bg-background-dark transition-colors duration-300">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Navbar />
-          <main className="my-6">{children}</main>
+          <main className="my-6" id="main-content">{children}</main>
           <Footer />
         </div>
       </body>

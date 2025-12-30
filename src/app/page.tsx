@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Link from "next/link";
-import { CiMail } from "react-icons/ci";
-import { GoArrowUpRight } from "react-icons/go";
+import { IoLogoGithub, IoMdMail } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -102,8 +101,8 @@ export const chunks = [
             className="inline-flex items-center gap-2 text-primary-light dark:text-primary-dark
             hover:underline focus:outline-none"
           >
-            <GoArrowUpRight />
-            GitHub
+            <IoLogoGithub />
+            git me
           </Link>
 
           <Link
@@ -111,7 +110,7 @@ export const chunks = [
             className="inline-flex items-center gap-2 text-primary-light dark:text-primary-dark
             hover:underline focus:outline-none"
           >
-            <CiMail />
+            <IoMdMail  />
             hello@pradipthapa.net
           </Link>
         </div>
