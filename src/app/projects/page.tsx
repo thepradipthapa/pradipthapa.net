@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-
 import { portfolioData } from "@/data/portfolio.data"
 import Link from "next/link"
 import { GoArrowUpRight } from "react-icons/go"
