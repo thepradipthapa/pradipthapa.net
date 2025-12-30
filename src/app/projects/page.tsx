@@ -1,66 +1,9 @@
 import type { Metadata } from "next";
 
-type Project = {
-  title: string;
-  description: string;
-  techStack: string[];
-  role: string;
-  features: string[];
-  links: {
-    github: string;
-    demo?: string;
-    live?: string;
-  };
-};
-export const projects: Project[] = [
-  {
-    title: "Scalable Authentication API",
-    description:
-      "REST API for user registration, login, and role-based access control. Built with Django REST Framework and deployed via Docker.",
-    techStack: ["Python", "Django REST Framework", "PostgreSQL", "Docker"],
-    role: "Backend Developer",
-    features: [
-      "JWT authentication with refresh tokens",
-      "Role-based access control middleware",
-      "Dockerized deployment with PostgreSQL",
-    ],
-    links: {
-      github: "https://github.com/thepradipthapa/auth-api",
-      demo: "https://auth-api-demo.vercel.app/docs",
-    },
-  },
-  {
-    title: "E-commerce API",
-    description:
-      "REST API for managing products, orders, and payments. Includes JWT authentication and PostgreSQL database integration.",
-    techStack: ["Python", "Django", "DRF", "PostgreSQL", "Docker"],
-    role: "Backend Developer",
-    features: [
-      "Product and order management endpoints",
-      "JWT-based authentication",
-      "Containerized deployment with Docker",
-    ],
-    links: {
-      github: "https://github.com/thepradipthapa/ecommerce-api",
-    },
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "Minimal recruiter-friendly portfolio built with Next.js 16 and Tailwind CSS v4, featuring dark/light mode and responsive design.",
-    techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
-    role: "Full-stack Developer",
-    features: [
-      "Responsive design with light/dark mode",
-      "Custom theme tokens with Tailwind v4",
-      "Optimized for recruiter readability",
-    ],
-    links: {
-      github: "https://github.com/thepradipthapa/portfolio",
-      live: "https://pradipthapa.net",
-    },
-  },
-];
+import { portfolioData } from "@/data/portfolio.data"
+import Link from "next/link"
+import { GoArrowUpRight } from "react-icons/go"
+
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -70,8 +13,81 @@ export const metadata: Metadata = {
 
 export default function ProjectsSection() {
   return (
-    <>
-    <div className="font-heading text-3xl text-primary-light dark:text-primary-dark ">Project</div>
-    </>
+<section className="space-y-8">
+      {/* Header */}
+      <div>
+        <h1 className="text-3xl font-heading font-semibold text-primary-light dark:text-primary-dark">
+          Projects 🚀
+        </h1>
+        <p className="mt-2 text-secondary-light dark:text-secondary-dark">
+          Backend systems, APIs, and scalable architectures I’ve built.
+        </p>
+      </div>
+
+      {/* Projects */}
+      <div className="space-y-6">
+        {portfolioData.projects.map((project) => (
+          <div
+            key={project.id}
+            className="card space-y-4"
+          >
+            {/* Title */}
+            <h2 className="text-xl font-heading font-semibold text-primary-light dark:text-primary-dark">
+              {project.title}
+            </h2>
+
+            {/* Description */}
+            <p className="text-secondary-light dark:text-secondary-dark">
+              {project.description}
+            </p>
+
+            {/* Tech Stack */}
+            <div className="flex flex-wrap gap-2">
+              {project.techStack.map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 text-sm rounded border
+                  border-border-light dark:border-border-dark
+                  text-secondary-light dark:text-secondary-dark"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* Features */}
+            <ul className="list-disc list-inside text-secondary-light dark:text-secondary-dark">
+              {project.features.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+
+            {/* Links */}
+            <div className="flex gap-4">
+              {project.githubUrl && (
+                <Link
+                  href={project.githubUrl}
+                  target="_blank"
+                  className="flex items-center gap-1 text-sm
+                  text-primary-light dark:text-primary-dark hover:underline"
+                >
+                  GitHub <GoArrowUpRight />
+                </Link>
+              )}
+              {project.liveUrl && (
+                <Link
+                  href={project.liveUrl}
+                  target="_blank"
+                  className="flex items-center gap-1 text-sm
+                  text-primary-light dark:text-primary-dark hover:underline"
+                >
+                  Live Demo <GoArrowUpRight />
+                </Link>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

@@ -45,8 +45,19 @@ export interface Certification {
   url?: string; 
 }
 
+export interface Project {
+  id: string
+  title: string
+  description: string
+  techStack: string[]
+  features: string[]
+  githubUrl?: string
+  liveUrl?: string
+}
+
 export interface PortfolioData {
     skills: Skills[]
     education: Education[]
     certifications: Certification[]
+    projects: Project[]
 }

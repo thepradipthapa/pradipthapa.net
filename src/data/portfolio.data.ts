@@ -58,4 +58,21 @@ export const portfolioData: PortfolioData = {
       url: "https://pradipthapa.net", 
     }
   ],
+  projects: [
+    {
+    id: "1",
+    title: "LiveChat-Realtime Chat Application",
+    description:
+      "Full Stack real-time chat Application.",
+    techStack: ["Django", "DRF", "PostgreSQL", "Redis", "WebSocket","NextJS","Docker"],
+    features: [
+      "OTP based Login with JWT authentication",
+      "Private, Publice Chat with Websocket",
+      "Message read/unread tracking",
+      "Send Friend Request"
+    ],
+    githubUrl: "https://github.com/thepradipthapa/livechat",
+  },
+  
+  ]
 }
