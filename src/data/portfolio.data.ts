@@ -64,7 +64,7 @@ export const portfolioData: PortfolioData = {
     title: "LiveChat-Realtime Chat Application",
     description:
       "Full Stack real-time chat Application.",
-    techStack: ["Django", "DRF", "PostgreSQL", "Redis", "WebSocket","NextJS","Docker"],
+    techStack: ["Django", "DRF", "PostgreSQL", "Redis", "WebSocket","Next.js","TypeScript","Docker"],
     features: [
       "OTP based Login with JWT authentication",
       "Private, Publice Chat with Websocket",
