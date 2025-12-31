@@ -19,7 +19,7 @@ export default function ProjectsSection() {
           Projects 🚀
         </h1>
         <p className="mt-2 text-secondary-light dark:text-secondary-dark">
-          Backend systems, APIs, and scalable architectures I’ve built.
+          The projects I’ve built.
         </p>
       </div>
 

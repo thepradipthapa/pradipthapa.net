@@ -10,7 +10,6 @@ const navItems = [
   { title: "Projects", href: siteMap.projects },
   { title: "Resume", href: siteMap.resume },
   { title: "Blog", href: siteMap.blog },
-  { title: "Contact", href: siteMap.contact },
 ];
 
 export default function Navbar() {

@@ -7,13 +7,12 @@ import {
   SiRedis, 
   SiLinux, 
   SiGit, 
-  SiBootstrap ,
-  SiVim 
+  SiSocketdotio 
 } from "react-icons/si";
-import { TbSql } from "react-icons/tb";
+import { TbSql, TbApi  } from "react-icons/tb";
 import { FaAws } from "react-icons/fa";
-
 import { PortfolioData} from "@/types/portfolio.types";
+
 
 export const portfolioData: PortfolioData = {
   skills: [
@@ -22,13 +21,13 @@ export const portfolioData: PortfolioData = {
     { title: "Django", icon: SiDjango },
     { title: "FastAPI", icon: SiFastapi },
     { title: "PostgreSQL", icon: SiPostgresql },
+    {title: "WebSocket", icon: SiSocketdotio},
+    {title: "DRF", icon: TbApi},
     { title: "Redis", icon: SiRedis },
     { title: "AWS", icon: FaAws },
     { title: "Linux", icon: SiLinux },
-    { title: "Vim", icon: SiVim },
     { title: "Git", icon: SiGit },
     { title: "React", icon: SiReact },
-    { title: "Bootstrap", icon: SiBootstrap },
   ],
   education: [
     {
@@ -50,6 +49,7 @@ export const portfolioData: PortfolioData = {
       gpa: "3.3/4.0"
     }
   ],
+
   certifications: [
     {
       id: "1",
@@ -58,13 +58,14 @@ export const portfolioData: PortfolioData = {
       url: "https://pradipthapa.net", 
     }
   ],
+
   projects: [
     {
     id: "1",
     title: "LiveChat-Realtime Chat Application",
     description:
       "Full Stack real-time chat Application.",
-    techStack: ["Django", "DRF", "PostgreSQL", "Redis", "WebSocket","Next.js","TypeScript","Docker"],
+    techStack: ["Django", "DRF", "PostgreSQL", "Redis", "WebSocket","RebbitMQ", "Next.js", "TypeScript", "Docker"],
     features: [
       "OTP based Login with JWT authentication",
       "Private, Publice Chat with Websocket",
@@ -72,6 +73,20 @@ export const portfolioData: PortfolioData = {
       "Send Friend Request"
     ],
     githubUrl: "https://github.com/thepradipthapa/livechat",
+  },
+  {
+    id: "2",
+    title: "Full Stack JWT Auth System",
+    description:
+      "A secure JWT‑based authentication system built with Django and Django REST Framework. This project provides a complete user authentication flow including registration, login, password management, and reset functionality.",
+    techStack: ["Django", "DRF", "React", "Bootstrap", "JWT"],
+    features: [
+      "Create new user accounts",
+      "Login: Authenticate users with JWT tokens",
+      "Change PAssword: Allow users to update password",
+      "Reset: Send password reset link and securely reset password"
+    ],
+    githubUrl: "https://github.com/thepradipthapa/fullstack-jwt-auth-system",
   },
   
   ]
