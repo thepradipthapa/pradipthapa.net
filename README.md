@@ -1,10 +1,11 @@
 # Pradip Thapa – Portfolio
+This is my personal portfolio website [pradipthapa.net](https://pradipthapa.net)
 
-This is my personal portfolio website [pradipthapa.net](https://pradipthapa.net), built to showcase my projects, skills, and experience as a Backend Developer.
+## Tech Stack
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
 
-## 🚀 Tech Stack
-- **Frontend:** Next.js 16, Tailwind CSS v4, TypeScript
-
-## 📂 Features
-- Minimal, responsive design with light/dark mode
-- Recruiter‑friendly project listings with tech stack and links
+## Contact
+- **LinkedIn** – [in/thepradipthapa](https://www.linkedin.com/in/thepradipthapa/)
+- **X (Twitter)** – [@thepradipthapa](https://x.com/thepradipthapa)
